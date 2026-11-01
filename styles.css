@@ -203,7 +203,7 @@ body {
   list-style: none;
   counter-reset: step;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   display: grid;
   gap: 1rem;
   grid-template-columns: 1fr;
@@ -246,51 +246,6 @@ body {
   text-align: center;
 }
 
-/* ---------- notify ---------- */
-.notify-form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  max-width: 28rem;
-  margin: 0 auto;
-}
-
-.notify-form input {
-  font-size: 1rem;
-  padding: 0.8rem 1rem;
-  border: 2px solid var(--line);
-  border-radius: 8px;
-  width: 100%;
-}
-
-.notify-form input:focus {
-  outline: none;
-  border-color: var(--amber);
-}
-
-.form-note {
-  min-height: 1.5em;
-  font-size: 0.9rem;
-  margin: 0;
-  text-align: center;
-}
-
-.form-note.error { color: #b3261e; }
-.form-note.ok { color: #1e7e34; }
-
-.direct-contact {
-  text-align: center;
-  color: var(--muted);
-  margin-top: 1.5rem;
-}
-
-.direct-contact a { color: var(--navy); font-weight: 600; }
-
-.sr-only {
-  position: absolute;
-  left: -9999px;
-}
-
 /* ---------- footer ---------- */
 .site-footer {
   background: var(--navy-deep);
@@ -309,8 +264,4 @@ body {
   .hero h1 { font-size: 2.9rem; }
   .cards { grid-template-columns: repeat(3, 1fr); }
   .steps { grid-template-columns: repeat(2, 1fr); }
-  .notify-form { flex-direction: row; }
-  .notify-form input { flex: 1; }
-  .notify-form .btn { flex: none; }
-  .form-note { flex-basis: 100%; }
 }
